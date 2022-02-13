@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Amiri:wght@400;700&display=swap');
+
+body{
+    background-color: rgb(204, 250, 240);
+    font-family: Arial, Helvetica;
+    text-align: center;
+}
+<br>
+.menu{
+    list-style: none;
+    padding: 0;
+    background: #000000;
+    width: 90%;
+    max-width: 100px;
+    margin: auto;
+}
+ul{
+    text-align: center;
+}
+.menu li a{
+    text-decoration: none;
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.menu li a:hover{
+    background: #ef8354
+}
+
+h1{
+    display: inline-block;
+    position: relative;
+    color: rgb(41, 39, 39);
+    font-family: 'Abril Fatface', cursive;
+    font-size: 5em;
+}
+h1::after,h1::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color:currentColor;
+    top: 0.6em;
+    transform: scale(0);
+    transition: all 0.2s ease ease-in;
+}
+
+h1:hover::before, h1:hover::after{
+    transform: scale(1);
+}
+h1::before{
+    left:-125px;
+}
+h1::after{
+    right:-125px;
